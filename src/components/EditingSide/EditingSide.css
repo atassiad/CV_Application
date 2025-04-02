@@ -1,0 +1,24 @@
+.editing-side {
+    display: flex;
+    background-color: #deb887;
+    flex: 1;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex: 0.5;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+}
+
+.testing {
+    flex: 9;
+}
