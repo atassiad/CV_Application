@@ -1,7 +1,25 @@
 .resume {
+    display: flex;
+    flex-direction: column;
     margin: 1rem 1rem;
     flex: 1;
     border-radius: 5px;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .25);
     background-color: wheat;
 } 
+
+.resume-education {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.1rem solid black;
+    max-height: 10%;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+.resume-education > h1 , p {
+    flex: 1;
+    flex: 1;
+}

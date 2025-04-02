@@ -29,7 +29,7 @@ h1 {
     letter-spacing: 0.25rem;
 }
 
-.testing {
+.edit-resume {
     display: flex;
     flex-direction: column;
     flex: 9;
@@ -57,4 +57,16 @@ h1 {
 
 .bottom {
     flex: 4;
+}
+
+.general-input, .education-input, .work-input {
+    display: flex;
+    flex: 4;
+}
+
+.left, .right {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
