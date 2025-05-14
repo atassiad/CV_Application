@@ -19,7 +19,7 @@
     margin: 1rem 1rem;
 }
 
-.resume-education > h1 , p {
+.resume-education > h1 , .resume-education > p {
     flex: 1;
     flex: 1;
-}
+} 

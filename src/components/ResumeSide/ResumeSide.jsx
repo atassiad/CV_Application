@@ -14,7 +14,7 @@ function ResumeSide() {
     return (
         <div className="resume-side">
             <div className="resume">
-                <ResumeEducation name="John" occupation="Supreme Ruler" telephone="1000" email="john@gmail.com" location="North Pole"/>
+                <ResumeEducation name="John" occupation="Supreme Ruler" telephone="1000" email="john@gmail.com" location="North Pole" />
             </div>
         </div>
     )
