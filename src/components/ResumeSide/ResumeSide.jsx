@@ -4,8 +4,10 @@ import './ResumeSide.css';
 function ResumeGeneralInfo({ name, occupation, telephone, email, location }) {
     return (
         <div className="resume-general-info">
-            <h1> {name || "Your Name"} </h1>
-            <p>{`${occupation || "Your Occupation"} | ${telephone || "Your Phone"} | ${email || "Your Email"} | ${location || "Your Location"}`}</p>
+            <h1> {name || "Lebron James"} </h1>
+            <p>
+                <span className="value">{`${occupation || "Basketball Player"} | ${telephone || "123-456-789"} | ${email || "lebron@gmail.com"} | ${location || "Cleveland, Ohio"}`}</span>
+            </p>
         </div>
     );
 }
@@ -15,12 +17,16 @@ function ResumeEducation({ school_name, degree_type, graduation_range, gpa, rele
         <div className="resume-education">
             <h2> Education </h2>
             <div className="school-grad-split">
-                <p>{school_name || "Your School Name"}</p>
-                <p>{graduation_range || "Your Graduation Range"}</p>
+                <p>{school_name || "Cleveland Institute of Technology"}</p>
+                <p>{graduation_range || "May 2000 - July 2025"}</p>
             </div>
-            <p>{degree_type || "Your Degree Type"}</p>
-            <p>{gpa || "Your GPA"}</p>
-            <p>{relevent_coursework || "Your Relevant Coursework"}</p>
+            <p>{degree_type || "Bachelors of Science in Corner Threes"}</p>
+            <p>
+                <span className="label">GPA:</span> <span className="value">{gpa || "4.0/4.0"}</span>
+            </p>
+            <p>
+                <span className="label">Relevant Coursework:</span> <span className="value">{relevent_coursework || "Projectile Motion for Three Point Effectiveness, Driving to the Rim, and the Flying Dutchman"}</span>
+            </p>
         </div>
     );
 }
@@ -30,12 +36,14 @@ function ResumeWorkExperience({ position, company, work_range, location, descrip
         <div className="resume-work-experience">
             <h2> Work Experience </h2>
             <div className="position-work-range-split">
-                <p>{position || "Your Position"}</p>
-                <p>{work_range || "Your Work Range"}</p>
+                <p>{position || "Senior Executive of Buckets"}</p>
+                <p>{work_range || "May 2000 - Current"}</p>
             </div>
-            <p>{company || "Your Company"}</p>
-            <p>{location || "Your Location"}</p>
-            <p>{description || "Your Description"}</p>
+            <div className="company-location-split">
+                <p>{company || "Cleveland Cavaliers"}</p>
+                <p>{location || "Cleveland, Ohio"}</p>
+            </div>
+            <p><span className="label">Description:</span> <span className="value">{description || "Maximized buckets by consistently taking the ball to the rack achieving a career-long efg% of 75%. Essentially, I can put the ball in the hole."}</span></p>
         </div>
     );
 }

@@ -35,7 +35,16 @@
     border-bottom: 0.1rem solid black;
 }
 
-.school-grad-split, .position-work-range-split {
+.school-grad-split, .position-work-range-split, .company-location-split {
     display: flex;
     justify-content: space-between;
+}
+
+.label {
+    font-weight: bold; 
+    margin-right: 0.5rem;
+}
+
+.value {
+    font-weight: 500; 
 }
