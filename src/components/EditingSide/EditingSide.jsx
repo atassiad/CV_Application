@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './EditingSide.css';
-import generalIcon from "/home/athanasios/Odin/CV_Application/src/assets/business-man-wearing-suit-and-tie-svgrepo-com.svg";
-import educationIcon from "/home/athanasios/Odin/CV_Application/src/assets/school-svgrepo-com.svg";
-import workIcon from "/home/athanasios/Odin/CV_Application/src/assets/work-alt-svgrepo-com.svg";
+import generalIcon from "../../assets/business-man-wearing-suit-and-tie-svgrepo-com.svg";
+import educationIcon from "../../assets/school-svgrepo-com.svg";
+import workIcon from "../../assets/work-alt-svgrepo-com.svg";
+
 
 function InputField({ label, type = "text", name, placeholder, value, onChange }) {
     const fieldStyle = {
