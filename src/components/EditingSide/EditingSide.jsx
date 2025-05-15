@@ -126,7 +126,10 @@ function Education({ onEducationSubmit }) {
                 <div className="right">
                     <InputField label="GPA" name="gpa" placeholder="Enter your GPA" value={formData.gpa} onChange={handleChange} />
                     <InputField label="Relevant Coursework" name="relevent_coursework" placeholder="Enter relevant coursework" value={formData.relevent_coursework} onChange={handleChange} />
-                    <button type="submit" className="submit-button">Submit</button>
+                    <div className="button-container">
+                        <button type="submit" className="submit-button-split">Submit</button>
+                        <button type="submit" className="submit-button-split">Next</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -170,7 +173,10 @@ function WorkExperience({ onWorkExperienceSubmit }) {
                 <div className="right">
                     <InputField label="Location" name="location" placeholder="Enter your location" value={formData.location} onChange={handleChange} />
                     <InputField label="Description" name="description" placeholder="Enter your description" value={formData.description} onChange={handleChange} />
-                    <button type="submit" className="submit-button">Submit</button>
+                    <div className="button-container">
+                        <button type="submit" className="submit-button-split">Submit</button>
+                        <button type="submit" className="submit-button-split">Next</button>
+                    </div>
                 </div>
             </form>
         </div>

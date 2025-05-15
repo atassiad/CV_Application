@@ -71,6 +71,11 @@ h1 {
     flex: 1;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .submit-button {
     margin-top: 8%;
     padding: 8px;
@@ -84,7 +89,22 @@ h1 {
     cursor: pointer;
 }
 
+.submit-button-split {
+    margin-top: 8%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #deb887;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
 .submit-button:hover {
     background-color: #cda776;
-    /* Slightly darker shade for hover effect */
+
 }
