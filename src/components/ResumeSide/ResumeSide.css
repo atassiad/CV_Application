@@ -8,18 +8,34 @@
     background-color: wheat;
 } 
 
-.resume-education {
+.resume-general-info {
     flex: 1;
     display: flex;
     flex-direction: column;
-    border-bottom: 0.1rem solid black;
     max-height: 10%;
     align-items: center;
     justify-content: center;
-    margin: 1rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: 0.1rem solid black;
 }
 
-.resume-education > h1 , .resume-education > p {
+.resume-general-info > h1 , .resume-general-info > p {
     flex: 1;
     flex: 1;
 } 
+
+.resume-education, .resume-work-experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.school-grad-split, .position-work-range-split {
+    display: flex;
+    justify-content: space-between;
+}

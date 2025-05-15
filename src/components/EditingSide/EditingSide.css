@@ -70,3 +70,21 @@ h1 {
     flex-direction: column;
     flex: 1;
 }
+
+.submit-button {
+    margin-top: 8%;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #deb887;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #cda776;
+    /* Slightly darker shade for hover effect */
+}
