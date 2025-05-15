@@ -43,7 +43,7 @@ function ResumeWorkExperience({ position, company, work_range, location, descrip
                 <p>{company || "Cleveland Cavaliers"}</p>
                 <p>{location || "Cleveland, Ohio"}</p>
             </div>
-            <p><span className="label">Description:</span> <span className="value">{description || "Maximized buckets by consistently taking the ball to the rack achieving a career-long efg% of 75%. Essentially, I can put the ball in the hole."}</span></p>
+            <p><span className="label">Accomplishments:</span> <span className="value">{description || "Maximized buckets by consistently taking the ball to the rack achieving a career-long efg% of 75%. Essentially, I can put the ball in the hole."}</span></p>
         </div>
     );
 }
