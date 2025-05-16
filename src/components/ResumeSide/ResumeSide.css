@@ -1,6 +1,7 @@
 .resume {
     display: flex;
     flex-direction: column;
+    max-height: 100%;
     margin: 1rem 1rem;
     flex: 1;
     border-radius: 5px;
@@ -27,7 +28,8 @@
     flex: 1;
 } 
 
-.resume-education, .resume-work-experience {
+.resume-education, .resume-work-experience, .resume-professional-summary, 
+.resume-skills, .resume-interests-certifications {
     display: flex;
     flex-direction: column;
     margin: 0rem 1rem;
@@ -47,4 +49,17 @@
 
 .value {
     font-weight: 500; 
+}
+
+.skills-split {
+    display: flex;
+    justify-content: space-around;
+    gap: 0rem;
+}
+
+.resume-side {
+    display: flex;
+    flex: 1;
+    height: auto; /* Allow the height to adjust based on content */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }

@@ -3,9 +3,12 @@
     background-color: #deb887;
     flex: 1;
     flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 105vh; /* Limit the height to the viewport */
 }
 
-.general, .education, .work-experience {
+.general, .education, .work-experience, .professional-summary, .skills, 
+.interests-certifications {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -32,7 +35,8 @@ h1 {
 .edit-resume {
     display: flex;
     flex-direction: column;
-    flex: 9;
+    flex: 1;
+    padding: 1rem; /* Add some padding for better spacing */
 }
 
 .top {
@@ -59,7 +63,8 @@ h1 {
     flex: 4;
 }
 
-.general-input, .education-input, .work-input {
+.general-input, .education-input, .work-input, .prof-input, .skills-input
+, .int-cert-input {
     display: flex;
     flex: 4;
 }

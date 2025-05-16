@@ -28,6 +28,21 @@ function App() {
     description: ''
   });
 
+  const [professionalSummary, setProfessionalSummary] = useState('');
+  const [skills, setSkills] = useState({
+    skill1: '',
+    skill2: '',
+    skill3: '',
+    skill4: '',
+    skill5: '',
+    skill6: ''
+  });
+
+  const [interestsAndCertifications, setInterestsAndCertifications] = useState({
+    interests: '',
+    certifications: ''
+  });
+
   const handleGeneralSubmit = (data) => {
     setGeneralInfo(data);
   };
@@ -40,6 +55,18 @@ function App() {
     setWorkExperienceInfo(data);
   };
 
+  const handleProfessionalSummarySubmit = (summary) => {
+    setProfessionalSummary(summary);
+  };
+
+  const handleSkillsSubmit = (data) => {
+    setSkills(data);
+  };
+
+  const handleInterestsAndCertificationsSubmit = (data) => {
+    setInterestsAndCertifications(data);
+  };
+
   return (
     <div className="app-container">
       <div className="main-app">
@@ -47,11 +74,17 @@ function App() {
           onGeneralSubmit={handleGeneralSubmit} 
           onEducationSubmit={handleEducationSubmit} 
           onWorkExperienceSubmit={handleWorkExperienceSubmit} 
+          onProfessionalSummarySubmit={handleProfessionalSummarySubmit}
+          onSkillsSubmit={handleSkillsSubmit}
+          onInterestsAndCertificationsSubmit={handleInterestsAndCertificationsSubmit}
         />
         <ResumeSide 
           generalInfo={generalInfo} 
           educationInfo={educationInfo} 
           workExperienceInfo={workExperienceInfo} 
+          professionalSummary={professionalSummary}
+          skills={skills}
+          interestsAndCertifications={interestsAndCertifications}
         />
       </div>
       <Footer className="footer" />

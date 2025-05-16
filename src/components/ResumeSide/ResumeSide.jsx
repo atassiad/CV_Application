@@ -48,7 +48,70 @@ function ResumeWorkExperience({ position, company, work_range, location, descrip
     );
 }
 
-function ResumeSide({ generalInfo, educationInfo, workExperienceInfo }) {
+let sampleSummary = "Visionary basketball executive and full-court entrepreneur with 20+ years of experience in dunk optimization, championship logistics, and locker room morale engineering. Known for managing multimillion-dollar brand partnerships while simultaneously managing triple-double workloads. Adept at leading cross-functional teams (usually to the Finals), mentoring junior associates (see: the entire Lakers roster), and executing high-pressure pivots—on and off the court. Seeking to leverage unparalleled vertical integration and clutch-time decision-making to expand influence in global sports diplomacy and Space Jam cinematic universes.";
+function ProfessionalSummary({ summary }) {
+    return (
+        <div className="resume-professional-summary">
+            <h2> Professional Summary </h2>
+            <p>
+                <span className="value">{`${summary || sampleSummary}`}</span>
+            </p>
+        </div>
+    );
+}
+
+function ResumeSkills({ skill1, skill2, skill3, skill4, skill5, skill6 }) {
+    return (
+        <div className="resume-skills">
+            <h2> Skills </h2>
+            <div className="skills-split">
+                <div className="skills-col">
+                    <ul>
+                        <li><span className="value">{skill1 || "Shooting"}</span></li>
+                        <li><span className="value">{skill2 || "Passing"}</span></li>
+                    </ul>
+                </div>
+                <div className="skills-col">
+                    <ul>
+                        <li><span className="value">{skill3 || "Dribbling"}</span></li>
+                        <li><span className="value">{skill4 || "Defense"}</span></li>
+                    </ul>
+                </div>
+                <div className="skills-col">
+                    <ul>
+                        <li><span className="value">{skill5 || "Leadership"}</span></li>
+                        <li><span className="value">{skill6 || "Teamwork"}</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+let sampleInterests = "Basketball, Space Jam, Dunking, Fatherhood, Dunking, Philanthropy, and Cabo Trips when I lose the championship.";
+let sampleCertifications = "Certified in Dunkology, Certified in Space Jam Diplomacy,Certified in Fatherhood, and Certified rap specialist.";
+function InterestsAndCertifications({ interests, certifications }) {
+    return (
+        <div className="resume-interests-certifications">
+            <h2> Interests & Certifications </h2>
+            <p>
+                <span className="label">Interests:</span> <span className="value">{interests || sampleInterests}</span>
+            </p>
+            <p>
+                <span className="label">Certifications:</span> <span className="value">{certifications || sampleCertifications}</span>
+            </p>
+        </div>
+    );
+}
+
+function ResumeSide({ 
+    generalInfo, 
+    educationInfo, 
+    workExperienceInfo, 
+    professionalSummary, 
+    skills, 
+    interestsAndCertifications 
+}) {
     return (
         <div className="resume-side">
             <div className="resume">
@@ -59,8 +122,21 @@ function ResumeSide({ generalInfo, educationInfo, workExperienceInfo }) {
                     email={generalInfo.email}
                     location={generalInfo.location}
                 />
+                <ProfessionalSummary summary={professionalSummary} />
+                <ResumeSkills 
+                    skill1={skills.skill1} 
+                    skill2={skills.skill2} 
+                    skill3={skills.skill3} 
+                    skill4={skills.skill4} 
+                    skill5={skills.skill5} 
+                    skill6={skills.skill6} 
+                />
                 <ResumeEducation {...educationInfo} />
                 <ResumeWorkExperience {...workExperienceInfo} />
+                <InterestsAndCertifications 
+                    interests={interestsAndCertifications.interests} 
+                    certifications={interestsAndCertifications.certifications} 
+                />
             </div>
         </div>
     );
